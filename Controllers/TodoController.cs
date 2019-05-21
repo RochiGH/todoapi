@@ -9,11 +9,13 @@ using TodoApi.Models;
 
 namespace TodoApi.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class TodoController : ControllerBase
     {
         private readonly TodoContext _context;
+        public int token = 0;
 
         public TodoController(TodoContext context)
         {
@@ -30,9 +32,18 @@ namespace TodoApi.Controllers
 
         // GET api/todo/fuck 
         [HttpGet("fuck")]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<string>> Getfuck()
         {
+            token = 10;
             return new string[] { "fuck1", "fuck2" };
+        }
+
+        // GET api/todo/suck 
+        [HttpGet("suck")]
+        public ActionResult<int> Getsuck()
+        {
+            token = 10;
+            return token;
         }
 
         // GET api/todo
