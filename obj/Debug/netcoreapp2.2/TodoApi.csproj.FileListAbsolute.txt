@@ -11,3 +11,4 @@ I:\todoapi\obj\Debug\netcoreapp2.2\TodoApi.AssemblyInfo.cs
 I:\todoapi\obj\Debug\netcoreapp2.2\TodoApi.RazorTargetAssemblyInfo.cache
 I:\todoapi\obj\Debug\netcoreapp2.2\TodoApi.dll
 I:\todoapi\obj\Debug\netcoreapp2.2\TodoApi.pdb
+I:\TodoApi\obj\Debug\netcoreapp2.2\TodoApi.csprojAssemblyReference.cache
