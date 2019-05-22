@@ -31,8 +31,9 @@ namespace TodoApi
                 opt.UseInMemoryDatabase("TodoList"));
             services.AddDbContext<DoneContext>(opt =>
                 opt.UseInMemoryDatabase("DoneList"));
-            services.AddDbContext<BikeContext>(opt =>
-                opt.UseInMemoryDatabase("BikeList"));
+            // services.AddDbContext<BikeContext>(opt =>
+            //   opt.UseInMemoryDatabase("BikeList"));
+            services.AddDbContext<BikeContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
